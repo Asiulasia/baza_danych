@@ -31,31 +31,28 @@
             components = new System.ComponentModel.Container();
             dataGridView1 = new DataGridView();
             databaseManagerBindingSource = new BindingSource(components);
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)databaseManagerBindingSource).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.DataSource = databaseManagerBindingSource;
-            dataGridView1.Location = new Point(79, 81);
+            dataGridView1.Location = new Point(78, 40);
+            dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(669, 307);
+            dataGridView1.Size = new Size(1019, 184);
             dataGridView1.TabIndex = 0;
-            // 
-            // databaseManagerBindingSource
-            // 
-            databaseManagerBindingSource.DataSource = typeof(DatabaseManager);
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(866, 450);
+            ClientSize = new Size(1223, 325);
             Controls.Add(dataGridView1);
+            Margin = new Padding(2);
             Name = "Form2";
             Text = "Baza wniosków";
             Load += Form2_Load;
@@ -68,5 +65,6 @@
 
         private DataGridView dataGridView1;
         private BindingSource databaseManagerBindingSource;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
